@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      defer
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      defer
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="src/styles.css" /> -->
+    <script defer src="src/script.js"></script>
+    <title>News Feed</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="max-w-2xl m-auto flex flex-col gap-3">
+        <!-- INPUT BOX -->
+        <div class="inputBox p-2">
+          <div class="flex items-center gap-4 mt-5">
+            <img
+              src="https://pbs.twimg.com/profile_images/1629566120066727937/KjLtBULl_400x400.jpg"
+              alt=""
+              class="w-10 h-10 rounded-full object-cover"
+            />
+            <form action="" class="form flex-1">
+              <input
+                type="text"
+                class="text-input w-full py-2 px-5 rounded-full border border-gray-300"
+                placeholder="What's on your mind Aymane?"
+                autofocus
+              />
+            </form>
+            <div class="rounded-md w-16 h-16">
+              <img
+                src="https://pbs.twimg.com/profile_images/1629566120066727937/KjLtBULl_400x400.jpg"
+                alt=""
+                class="img-preview rounded-md w-full object-contain hidden"
+              />
+            </div>
+          </div>
+          <!-- FILE UPLOAD -->
+          <div class="flex justify-center items-center gap-2 py-3 border-b">
+            <input type="file" class="input-el hidden" accept="image/*" />
+            <button
+              class="btn-upload-image bg-slate-100 rounded-md py-3 px-5 flex items-center space-x-3"
+              type="button"
+            >
+              <ion-icon
+                name="image-outline"
+                class="text-xl text-teal-500"
+              ></ion-icon>
+              <div>Upload an Image</div>
+            </button>
+          </div>
+        </div>
+
+        <!-- POSTS -->
+        <div class="posts flex flex-col gap-4">
+          <!-- POST -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
